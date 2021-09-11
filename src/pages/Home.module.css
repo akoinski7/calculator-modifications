@@ -1,0 +1,76 @@
+.headerContainer{
+    color: var(--color-header);
+    background-color: var(--color-background);
+}
+
+.calculatorContainer {
+
+    padding-bottom: 2.5rem;
+    background-color: var(--color-background);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.sumContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-end;
+    padding-right: 2rem;
+    margin-top: 2rem;
+
+    background-color: var(--color-sumContainer);
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.sumContainer h1,
+.sumContainer h4,
+.sumContainer p {
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Calculation result */
+.sumContainer h1 {
+    color: var(--color-sumColor);
+    font-size: 4rem;
+}
+
+/* Sum History */
+.sumContainer p {
+
+    font-size: 2rem;
+    color: rgb(163, 163, 163);
+}
+
+/* Text above history */
+.sumContainer h4 {
+
+    color: var(--color-sumContainer);
+
+}
+
+:root{
+    --color-background: white;
+    --color-sumContainer: rgba(99, 158, 226, 0.1);
+    --color-sumColor:black;
+    --color-header: black;
+    --ion-background-color: white;
+}
+
+[data-theme="dark"] {
+    --color-background: black;
+    --color-sumContainer: grey;
+    --color-header: grey;
+    --color-sumColor: white;
+    /* --ion-background-color: black; */
+
+}
+
+[data-theme="spooky"]{
+    --color-background: rgb(146, 95, 1);
+}

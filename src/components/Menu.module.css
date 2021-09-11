@@ -1,0 +1,11 @@
+.menuContainer{
+    color: var(--color-menuButton);
+}
+
+:root{
+    --color-menuButton: black;
+}
+
+[data-theme="dark"]{
+    --color-menuButton: grey;
+}
