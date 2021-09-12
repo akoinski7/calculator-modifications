@@ -44,13 +44,13 @@
 .sumContainer p {
 
     font-size: 2rem;
-    color: rgb(163, 163, 163);
+    color: var(--color-historyColor);
 }
 
 /* Text above history */
 .sumContainer h4 {
 
-    color: var(--color-sumContainer);
+    color: var(--color-historyColor);
 
 }
 
@@ -58,19 +58,41 @@
     --color-background: white;
     --color-sumContainer: rgba(99, 158, 226, 0.1);
     --color-sumColor:black;
+    --color-historyColor: rgb(163, 163, 163);
     --color-header: black;
     --ion-background-color: white;
 }
 
 [data-theme="dark"] {
-    --color-background: black;
+    --color-background: rgb(20,20,20);
     --color-sumContainer: grey;
     --color-header: grey;
     --color-sumColor: white;
-    /* --ion-background-color: black; */
+    --color-historyColor: rgb(209, 207, 207);
+
+
+    --ion-background-color: rgb(20, 20, 20);
 
 }
 
 [data-theme="spooky"]{
     --color-background: rgb(146, 95, 1);
+    --color-sumContainer: rgb(123, 44, 19);
+    --color-sumColor: orange;
+    --color-historyColor: yellow;
+    --color-header: orange;
+
+
+    --ion-background-color: rgb(146,95,1);
+}
+
+[data-theme="merry"]{
+    --color-background: green;
+    --color-sumcontainer: rgb(110, 206, 0);
+    --color-sumColor: red;
+    --color-historyColor: rgb(185, 70, 70);
+
+
+
+    --ion-background-color: green;
 }

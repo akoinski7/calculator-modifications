@@ -9,3 +9,11 @@
 [data-theme="dark"]{
     --color-menuButton: grey;
 }
+
+[data-theme="spooky"]{
+    --color-menuButton: orange;
+}
+
+[data-theme="merry"]{
+    --color-menuButton: red;
+}

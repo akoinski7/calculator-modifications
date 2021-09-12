@@ -3,6 +3,8 @@ import { IonPage, IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList,
 import React , {useState} from "react";
 import { NavButtons } from "../components/NavButtons";
 
+import styles from "./Customize.module.css";
+
 
 const Customize = () => {
 
@@ -21,6 +23,8 @@ const Customize = () => {
             case "spooky":
                 document.documentElement.setAttribute("data-theme", "spooky");
                 break;
+            case "merry":
+                document.documentElement.setAttribute("data-theme", "merry");
         }
 
     }
@@ -30,7 +34,7 @@ const Customize = () => {
         <IonPage>
 
             <IonHeader>
-                <IonToolbar>
+                <IonToolbar className={styles.headerContainer}>
                     <IonTitle>CUSTOMIZE</IonTitle>
                     {/* <IonButton routerLink={"/home"}>Home </IonButton>
                     <IonButton routerLink={"/customize"}>Customize </IonButton> */}
@@ -42,28 +46,26 @@ const Customize = () => {
 
             <IonContent>
                 <IonList>
-                    <IonListHeader>
+                    {/* <IonListHeader>
                         <IonLabel>
                             Customization
                         </IonLabel>
-                    </IonListHeader>
+                    </IonListHeader> */}
 
-                    <IonItem>
+                    <IonItem  className={styles.listContainer}>
                         <IonLabel>Themes</IonLabel>
                         <IonSelect value={theme} placeholder="Select One" onIonChange={e => switchTheme(e.detail.value)}>
                             <IonSelectOption value="classic">Classic</IonSelectOption>
                             <IonSelectOption value="dark">Dark</IonSelectOption>
                             <IonSelectOption value="spooky">Spooky</IonSelectOption>
+                            <IonSelectOption value="merry">Merry</IonSelectOption>
                         </IonSelect>
                     </IonItem>
 
-                    <IonItem>
+                    <IonItem className={styles.listContainer}>
                         <IonLabel>Font</IonLabel>
                         <IonSelect okText="Okay" cancelText="Dismiss">
-                            <IonSelectOption value="brown">Brown</IonSelectOption>
-                            <IonSelectOption value="blonde">Blonde</IonSelectOption>
-                            <IonSelectOption value="black">Black</IonSelectOption>
-                            <IonSelectOption value="red">Red</IonSelectOption>
+                            <IonSelectOption value="brown">Not Implented Yet</IonSelectOption>
                         </IonSelect>
                     </IonItem>
                 </IonList>

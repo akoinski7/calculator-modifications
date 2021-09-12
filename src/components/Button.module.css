@@ -36,4 +36,14 @@
 
 [data-theme="spooky"]{
     --color-buttonBackground: orange;
+    --color-buttonText: brown;
+    --color-specialBackground: rgb(86, 32, 11);
+    --color-specialText: brown;
+}
+
+[data-theme="merry"]{
+    --color-buttonBackground: rgb(119, 230, 86);
+    --color-buttonText: red;
+    --color-specialBackground: rgb(0, 54, 0);
+    --color-specialText: red;
 }

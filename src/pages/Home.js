@@ -8,6 +8,7 @@ import { NavButtons } from "../components/NavButtons";
 import { buttons } from "../utils/Buttons";
 import { theme } from "../pages/Customize";
 
+
 const Home = () => {
 	//My code
 	const [ calcHistory, setCalcHistory ] = useState("");
@@ -24,7 +25,7 @@ const Home = () => {
 
 			calculate();
 			console.log("Breakpoint 3: " + sum);
-			//setCalcHistory(calcHistory + sumHistory + '\n' + sum);//+ "\n" + sum + "\n");
+			setCalcHistory(calcHistory + sumHistory + '\n' + sum);//+ "\n" + sum + "\n");
 		} else if (operator === "C") {
 
 			reset();

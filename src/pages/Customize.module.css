@@ -1,0 +1,32 @@
+.headerContainer{
+    color: var(--color-header);
+}
+
+.listContainer{
+    color: var(--color-header);
+}
+
+:root{
+    --color-header: black;
+}
+
+[data-theme="dark"]{
+    --color-header: white;
+    --ion-color-step-850: white;
+    --ion-text-color: white;
+    --ion-color-primary: white;
+}
+
+[data-theme="spooky"]{
+    --color-header: orange;
+    --ion-color-step-850: orange;
+    --ion-text-color: orange;
+    --ion-color-primary: orange;
+}
+
+[data-theme="merry"]{
+    --color-header: red;
+    --ion-color-step-850: red;
+    --ion-text-color: red;
+    --ion-color-primary: red;
+}
